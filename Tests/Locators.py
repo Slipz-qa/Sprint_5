@@ -13,21 +13,21 @@ class TestLocators:
     LOGIN_BUTTON_IN_LOGIN_PAGE = By.XPATH, "//button[contains(text(), 'Войти')]" # Кнопка для подтверждения входа на странице входа
     PERSONAL_ACCOUNT_BUTTON = By.XPATH, "//a[normalize-space()='Личный Кабинет']" # Кнопка для перехода в личный кабинет на главной странице
     LOGIN_BUTTON_IN_REGISTRATION_PAGE = By.XPATH, "//a[contains(text(), 'Войти')]" # Кнопка для перехода на страницу входа из страницы регистрации
-    RECOVER_PASSWORD_BUTTON = By.XPATH, "//a[contains(@class, 'Auth_link__1fOlj') and contains(text(), 'Восстановить пароль')]" # Кнопка для восстановления пароля
+    RECOVER_PASSWORD_BUTTON = By.XPATH, "//a[contains(@class, 'Auth_link') and contains(text(), 'Восстановить пароль')]" # Кнопка для восстановления пароля
     HEADER_RECOVER_PASSWORD_PAGE = By.XPATH, "//h2[contains(text(), 'Восстановление пароля')]" # Заголовок страницы восстановления пароля
-    LOGIN_BUTTON_IN_RECOVER_PASSWORD_PAGE = By.XPATH, "//a[contains(@class, 'Auth_link__1fOlj')]"  # Кнопка для входа на страницу восстановления пароля
+    LOGIN_BUTTON_IN_RECOVER_PASSWORD_PAGE = By.XPATH, "//a[contains(@class, 'Auth_link')]"  # Кнопка для входа на страницу восстановления пароля
     TEXT_IN_PERSONAL_ACCOUNT_PAGE = By.XPATH, "//p[contains(text(), 'В этом разделе вы можете изменить свои персональные данные')]" # Текст на странице личного кабинета, информирующий пользователя о возможности изменения персональных данных
     HEADER_IN_CONSTRUCTOR_PAGE = By.XPATH, "//h1[contains(text(), 'Соберите бургер')]" # Заголовок страницы конструктора бургеров
     CONSTRUCTOR_BUTTON = By.XPATH, "//p[contains(text(), 'Конструктор')]" # Кнопка для перехода в конструктор бургеров
     LOGO = By.XPATH, "//div[contains(@class, 'AppHeader_header__logo__2D0X2')]" # Логотип приложения
-    LOGOUT_BUTTON = By.XPATH, "//button[contains(text(), 'Выход')]" # Кнопка выхода из личного кабинета
+    LOGOUT_BUTTON = By.XPATH, "//button[contains(@class, 'Account_button__14Yp3') and normalize-space()='Выход']" # Кнопка выхода из личного кабинета
     SAUCES_SECTION = By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and .//span[text()='Соусы']]" # Раздел соусов в конструкторе
     BUN_SECTION = By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and .//span[text()='Булки']]" # Раздел булок в конструкторе
     FILLING_SECTION = By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and .//span[text()='Начинки']]" # Раздел начинок в конструкторе
     SPICY_X_SAUCE = By.XPATH, "//p[contains(@class, 'BurgerIngredient_ingredient__text__yp3dH') and text()='Соус Spicy-X']" # Название соуса Spicy-X в разделе соусов
     FILLING_NAME = By.XPATH, "//p[contains(@class, 'BurgerIngredient_ingredient__text__yp3dH') and text()='Говяжий метеорит (отбивная)']"  # Название начинки Говяжий метеорит (отбивная) в разделе начинок
     BUN_NAME = By.XPATH, "//p[contains(@class, 'BurgerIngredient_ingredient__text__yp3dH') and text()='Краторная булка N-200i']" # Название булки Краторная булка N-200i в разделе булок
-
+    ERROR_MASSEGE = By.XPATH, "//p[@class='input__error text_type_main-default' and contains(text(), 'Некорректный пароль')]" # Сообщение о неорректном пароле
 
 
 

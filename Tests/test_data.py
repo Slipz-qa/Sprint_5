@@ -1,0 +1,4 @@
+USER_NAME = "Артем"
+VALID_EMAIL = "ArtemBochkov14999@yandex.ru"
+INVALID_PASSWORD = "11"
+CORRECT_PASSWORD = 123456
