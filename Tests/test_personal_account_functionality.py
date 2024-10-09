@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-from Locators import TestLocators
+from locators import TestLocators
 from urls import MAIN_PAGE_URL, REGISTER_PAGE_URL, LOGIN_PAGE_URL
 from test_data import USER_NAME, VALID_EMAIL, INVALID_PASSWORD, CORRECT_PASSWORD
 
